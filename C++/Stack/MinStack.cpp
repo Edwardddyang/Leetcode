@@ -40,8 +40,8 @@ public:
     void push(int value) {
         if(minimum.size() == 0)
             minimum.push(value); 
-        //Make sure its "else if"
-        else if(value <= minimum.top()) 
+        //Make sure its "else if", or else after addign the first value to minimum, it will add it again to the same minimum stack since its <= 
+        else if(value <= minimum.top()) //Make sure its <= or else if you have 2 of the same minimum value, it will only pop 1 of them and lose track of the other minimum value
             minimum.push(value); 
         seen.push(value); 
     }

@@ -1,0 +1,20 @@
+Premise: 
+
+You exploit order instead of destroying it, and no extra memory. 
+Two indexes walk the array 
+
+Main patterns:
+
+- Opposite ends then move inwards 
+- Same direction, different speeds 
+
+How to recognize:
+
+- Array is sorted, or sorting doesn't break the problem
+- You need pairs satisfying a condition 
+- Filtering in place 
+
+To recognize not:
+
+- Order is irrelevant and only need lookup 
+- Can't sort because indices are part of the answer 

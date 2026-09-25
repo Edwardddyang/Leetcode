@@ -1,0 +1,22 @@
+Premise:
+
+Spend memory to avoid re-searching 
+
+Main patterns:
+
+- Seen-before 
+- Counting frequencies 
+- Grouping by a key 
+- Set for O(1) 
+
+How to recognize: 
+
+- Needs two loops, one of which is searching
+- Involves duplicates, frequencies, or grouping 
+- Order doesn't matter 
+
+How to recognize it's not: 
+
+- Order is needed (two pointers)
+- Array is sorted (binary search/two pointers)
+- Need previous state back (stack)

@@ -1,0 +1,22 @@
+Premise: 
+
+You hold items are still "unresolved" and settle them later, most recent first (Last in first out)
+
+Main patterns:
+
+- Matching/Nesting (Push openers and pop when the closer arrives)
+- Keep the stack increasing/decreasing. Popping an element means you found the next greatest/smallest
+- Undo/Collapse (The next item can cancel or merge with the top)
+
+How to recognize: 
+
+- "Next/previous smaller/greater element" or "How far until something bigger/smaller" 
+- Each element's answer depends on the nearest element that blocks it 
+- A brute force of looping is O(n2)
+
+How not to recognize: 
+
+- You need the oldest element first
+- You need the largest/smallest overall (Heap)
+- Isn't about 'nearest' - any pair works (hashmap or two pointers)
+- Sorted input with pair conditions 
