@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/edwardyang/Leetcode/Leetcode/C++/CodeSignal/Q8MaximumSumOfSubarraySizeK'
+relocations:     []
+...
